@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -23,11 +24,11 @@ public class EmployeesContoller {
     }
     @GetMapping("/list/{nom}")
    // @ResponseStatus(value = HttpStatus.NOT_FOUND)
-    public ResponseEntity<Employees> getEmployees(@PathVariable String nom){
+    public ResponseEntity<Employees> getEmployees(@Valid  @PathVariable String nom){
         return ResponseEntity.ok(employeesService.getUser(nom));
     }
     @PostMapping("/add")
-    public ResponseEntity<Employees> addEmployee(@RequestBody Employees employees){
+    public ResponseEntity<Employees> addEmployee(@Valid @RequestBody Employees employees){
         return ResponseEntity.ok(employeesService.SaveEmployees(employees));
     }
     // i comment it to make it globale in each controller ------> voir GlobaleException Class
