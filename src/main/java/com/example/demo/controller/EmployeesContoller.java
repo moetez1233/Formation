@@ -1,11 +1,8 @@
-package com.example.demo.Controller;
+package com.example.demo.controller;
 
-import com.example.demo.CustumException.ErrorObject;
-import com.example.demo.CustumException.NotExist;
-import com.example.demo.Models.Employees;
-import com.example.demo.Services.EmployeesServiceImpl;
+import com.example.demo.domain.Employe;
+import com.example.demo.services.EmployeesServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,17 +16,17 @@ public class EmployeesContoller {
     private EmployeesServiceImpl employeesService;
 
     @GetMapping("/list")
-    public ResponseEntity<List<Employees>> listEmployees(){
+    public ResponseEntity<List<Employe>> listEmployees(){
         return ResponseEntity.ok(employeesService.getAllEmployees());
     }
     @GetMapping("/list/{nom}")
    // @ResponseStatus(value = HttpStatus.NOT_FOUND)
-    public ResponseEntity<Employees> getEmployees(@Valid  @PathVariable String nom){
+    public ResponseEntity<Employe> getEmployees(@Valid  @PathVariable String nom){
         return ResponseEntity.ok(employeesService.getUser(nom));
     }
     @PostMapping("/add")
-    public ResponseEntity<Employees> addEmployee(@Valid @RequestBody Employees employees){
-        return ResponseEntity.ok(employeesService.SaveEmployees(employees));
+    public ResponseEntity<Employe> addEmployee(@Valid @RequestBody Employe employe){
+        return ResponseEntity.ok(employeesService.SaveEmployees(employe));
     }
     // i comment it to make it globale in each controller ------> voir GlobaleException Class
     /*@ExceptionHandler

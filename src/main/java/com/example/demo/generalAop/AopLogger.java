@@ -1,7 +1,7 @@
-package com.example.demo.GeneralAop;
+package com.example.demo.generalAop;
 
 
-import com.example.demo.Models.Employees;
+import com.example.demo.domain.Employe;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -9,22 +9,20 @@ import org.aspectj.lang.annotation.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 @Aspect
 @Component
 @Slf4j
 public class AopLogger {
 
-    @Pointcut("execution(* com.example.demo.Controller.*.*(..))")
+    @Pointcut("execution(* com.example.demo.controller.*.*(..))")
     public void logginPointCoupur(){
     }
-    @Pointcut("execution(* com.example.demo.Controller.EmployeesContoller.getEmployees(..))")
+    @Pointcut("execution(* com.example.demo.controller.EmployeesContoller.getEmployees(..))")
     public void loggingMthodeGetEmploye(){
     }
 
     // point de coupure sur la methode addEmployee
-    @Pointcut("execution(* com.example.demo.Controller.EmployeesContoller.addEmployee(..))")
+    @Pointcut("execution(* com.example.demo.controller.EmployeesContoller.addEmployee(..))")
     public void logginAddEmployee(){
     }
 
@@ -41,7 +39,7 @@ public class AopLogger {
 
     // get the return of methode getEmployees
     @AfterReturning(value = "loggingMthodeGetEmploye()",returning = "returnMethode")
-    public void afterReturnin(JoinPoint joinPoint, ResponseEntity<Employees> returnMethode){
+    public void afterReturnin(JoinPoint joinPoint, ResponseEntity<Employe> returnMethode){
         log.info("employe from la methode getEmployer is : "+joinPoint.getSignature());
         log.info(returnMethode.toString());
     }

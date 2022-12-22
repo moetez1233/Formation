@@ -1,4 +1,4 @@
-package com.example.demo.Models;
+package com.example.demo.domain;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 @Entity
 @Table
 @Data
-public class Employees {
+public class Employe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,13 +21,13 @@ public class Employees {
     @Size(min = 3,message = "min caractere are 3")
     private String prenom;
 
-    public Employees(String nom, String prenom) {
+    public Employe(String nom, String prenom) {
 
         this.nom = nom;
         this.prenom = prenom;
     }
 
-    public Employees() {
+    public Employe() {
     }
 
     public Long getId() {

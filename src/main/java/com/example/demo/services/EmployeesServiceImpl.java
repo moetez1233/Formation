@@ -1,8 +1,8 @@
-package com.example.demo.Services;
+package com.example.demo.services;
 
-import com.example.demo.CustumException.NotExist;
-import com.example.demo.Models.Employees;
-import com.example.demo.Repositories.EmployeesRepository;
+import com.example.demo.custumException.NotExist;
+import com.example.demo.domain.Employe;
+import com.example.demo.repositories.EmployeesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,17 +14,17 @@ public class EmployeesServiceImpl implements EmployService{
     private EmployeesRepository employeesRepository;
 
     @Override
-    public Employees getUser(String nom) {
+    public Employe getUser(String nom) {
         return employeesRepository.getEmploteeByidEmplo(nom).orElseThrow(()->new NotExist("user "+nom+ " not found"));
     }
 
     @Override
-    public Employees SaveEmployees(Employees employees) {
-        return employeesRepository.save(employees);
+    public Employe SaveEmployees(Employe employe) {
+        return employeesRepository.save(employe);
     }
 
     @Override
-    public List<Employees> getAllEmployees() {
+    public List<Employe> getAllEmployees() {
         return employeesRepository.findAll();
     }
 }
