@@ -1,0 +1,79 @@
+2022-12-23 17:20:06.234  INFO DESKTOP-HJQLJV0 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.2.3.Final
+2022-12-23 17:20:06.272  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : Starting FormationApplication using Java 17.0.1 on DESKTOP-HJQLJV0 with PID 5376 (F:\Axeane\exercices\Api\Formation\target\classes started by ASUS in F:\Axeane\exercices\Api\Formation)
+2022-12-23 17:20:06.282  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-12-23 17:20:07.924  INFO DESKTOP-HJQLJV0 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 17:20:08.086  INFO DESKTOP-HJQLJV0 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 1 JPA repository interfaces.
+2022-12-23 17:20:09.763  INFO DESKTOP-HJQLJV0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9094 (http)
+2022-12-23 17:20:09.809  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9094"]
+2022-12-23 17:20:09.810  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-23 17:20:09.812  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-12-23 17:20:10.209  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-23 17:20:10.210  INFO DESKTOP-HJQLJV0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3782 ms
+2022-12-23 17:20:10.594  INFO DESKTOP-HJQLJV0 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 17:20:10.687  INFO DESKTOP-HJQLJV0 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-12-23 17:20:11.016  INFO DESKTOP-HJQLJV0 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 17:20:11.284  INFO DESKTOP-HJQLJV0 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-12-23 17:20:11.552  INFO DESKTOP-HJQLJV0 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-12-23 17:20:11.597  INFO DESKTOP-HJQLJV0 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-23 17:20:14.057  INFO DESKTOP-HJQLJV0 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 17:20:14.077  INFO DESKTOP-HJQLJV0 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 17:20:15.420  WARN DESKTOP-HJQLJV0 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 17:20:17.307  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9094"]
+2022-12-23 17:20:17.356  INFO DESKTOP-HJQLJV0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9094 (http) with context path ''
+2022-12-23 17:20:17.376  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : Started FormationApplication in 11.96 seconds (JVM running for 16.066)
+2022-12-23 17:20:17.379  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : starter application debugger success
+2022-12-23 17:37:26.133  INFO DESKTOP-HJQLJV0 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 17:37:26.135  INFO DESKTOP-HJQLJV0 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2022-12-23 17:37:26.145  INFO DESKTOP-HJQLJV0 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2022-12-23 17:37:44.304  INFO DESKTOP-HJQLJV0 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.2.3.Final
+2022-12-23 17:37:44.407  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : Starting FormationApplication using Java 17.0.1 on DESKTOP-HJQLJV0 with PID 18164 (F:\Axeane\exercices\Api\Formation\target\classes started by ASUS in F:\Axeane\exercices\Api\Formation)
+2022-12-23 17:37:44.417  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-12-23 17:37:45.997  INFO DESKTOP-HJQLJV0 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 17:37:46.111  INFO DESKTOP-HJQLJV0 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+2022-12-23 17:37:47.765  INFO DESKTOP-HJQLJV0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9094 (http)
+2022-12-23 17:37:47.799  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9094"]
+2022-12-23 17:37:47.800  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-23 17:37:47.803  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-12-23 17:37:48.150  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-23 17:37:48.150  INFO DESKTOP-HJQLJV0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3586 ms
+2022-12-23 17:37:48.499  INFO DESKTOP-HJQLJV0 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 17:37:48.608  INFO DESKTOP-HJQLJV0 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-12-23 17:37:48.967  INFO DESKTOP-HJQLJV0 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 17:37:49.393  INFO DESKTOP-HJQLJV0 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-12-23 17:37:49.683  INFO DESKTOP-HJQLJV0 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-12-23 17:37:49.718  INFO DESKTOP-HJQLJV0 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-23 17:37:51.225  INFO DESKTOP-HJQLJV0 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 17:37:51.241  INFO DESKTOP-HJQLJV0 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 17:37:52.585  WARN DESKTOP-HJQLJV0 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 17:37:54.041  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9094"]
+2022-12-23 17:37:54.105  INFO DESKTOP-HJQLJV0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9094 (http) with context path ''
+2022-12-23 17:37:54.139  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : Started FormationApplication in 10.647 seconds (JVM running for 15.966)
+2022-12-23 17:37:54.145  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : starter application debugger success
+2022-12-23 17:43:54.161  INFO DESKTOP-HJQLJV0 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 17:43:54.165  INFO DESKTOP-HJQLJV0 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2022-12-23 17:43:54.177  INFO DESKTOP-HJQLJV0 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2022-12-23 17:44:12.861  INFO DESKTOP-HJQLJV0 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.2.3.Final
+2022-12-23 17:44:12.913  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : Starting FormationApplication using Java 17.0.1 on DESKTOP-HJQLJV0 with PID 2268 (F:\Axeane\exercices\Api\Formation\target\classes started by ASUS in F:\Axeane\exercices\Api\Formation)
+2022-12-23 17:44:12.936  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-12-23 17:44:15.041  INFO DESKTOP-HJQLJV0 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-23 17:44:15.195  INFO DESKTOP-HJQLJV0 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 1 JPA repository interfaces.
+2022-12-23 17:44:16.749  INFO DESKTOP-HJQLJV0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9094 (http)
+2022-12-23 17:44:16.800  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9094"]
+2022-12-23 17:44:16.801  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-12-23 17:44:16.802  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-12-23 17:44:17.131  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-12-23 17:44:17.132  INFO DESKTOP-HJQLJV0 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3975 ms
+2022-12-23 17:44:17.472  INFO DESKTOP-HJQLJV0 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-23 17:44:17.575  INFO DESKTOP-HJQLJV0 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-12-23 17:44:17.876  INFO DESKTOP-HJQLJV0 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-23 17:44:18.178  INFO DESKTOP-HJQLJV0 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-12-23 17:44:18.511  INFO DESKTOP-HJQLJV0 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-12-23 17:44:18.555  INFO DESKTOP-HJQLJV0 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-12-23 17:44:20.076  INFO DESKTOP-HJQLJV0 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-23 17:44:20.095  INFO DESKTOP-HJQLJV0 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-23 17:44:21.344  WARN DESKTOP-HJQLJV0 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-23 17:44:22.812  INFO DESKTOP-HJQLJV0 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9094"]
+2022-12-23 17:44:22.895  INFO DESKTOP-HJQLJV0 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9094 (http) with context path ''
+2022-12-23 17:44:22.928  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : Started FormationApplication in 11.055 seconds (JVM running for 15.286)
+2022-12-23 17:44:22.934  INFO DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : starter application debugger success
+2022-12-23 17:44:22.936 ERROR DESKTOP-HJQLJV0 --- [           main] c.e.d.FormationApplication               : error message
