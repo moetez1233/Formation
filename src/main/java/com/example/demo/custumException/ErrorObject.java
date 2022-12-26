@@ -1,5 +1,6 @@
 package com.example.demo.custumException;
 
+
 import lombok.Data;
 
 @Data
