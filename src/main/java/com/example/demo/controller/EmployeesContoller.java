@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.domain.Employe;
+import com.example.demo.services.EmployService;
 import com.example.demo.services.EmployeesServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +14,7 @@ import java.util.List;
 @RequestMapping("employees")
 public class EmployeesContoller {
     @Autowired
-    private EmployeesServiceImpl employeesService;
+    private EmployService employeesService;
 
     @GetMapping("/list")
     public ResponseEntity<List<Employe>> listEmployees(){

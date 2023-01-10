@@ -5,6 +5,7 @@ import com.example.demo.domain.Employe;
 import com.example.demo.repositories.EmployeesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class EmployeesServiceImpl implements EmployService{
     private EmployeesRepository employeesRepository;
 
     @Override
+    @Transactional(readOnly = true)
     public Employe getUser(String nom) {
         return employeesRepository.getEmploteeByidEmplo(nom).orElseThrow(()->new NotExist("user "+nom+ " not found"));
     }
